@@ -40,6 +40,10 @@ jobs:
             ruby: "3.2"
           - gemfile: rails52
             ruby: "3.3"
+          - gemfile: rails72
+            ruby: "2.7"
+          - gemfile: rails72
+            ruby: "3.0"
 
     env:
       BUNDLE_GEMFILE: gemfiles/${{ matrix.gemfile }}.gemfile
