@@ -243,13 +243,14 @@ When you have found the requests, check their response codes which give a clue o
 
 Whether you catch a bug, have a question or a suggestion for improvement, I sincerely appreciate any feedback. Please feel free to [create an issue](https://github.com/active-elastic-job/active-elastic-job/issues/new) and I will follow up as soon as possible.
 
-
 ## Contribute
 
-Running the complete test suite requires to launch elastic beanstalk environments. Travis builds triggered by a pull request will launch the needed elastic beanstalk environments and subsequently run the complete test suite. You can run all specs that do not depend on running elasitic beanstalk environments by setting an environment variable:
- ```bash
+Running the complete test suite requires to launch elastic beanstalk environments. GitHub Actions builds triggered by a pull request will launch the needed elastic beanstalk environments and subsequently run the complete test suite. You can run all specs that do not depend on running elasitic beanstalk environments by setting an environment variable:
+
+```bash
 EXCEPT_DEPLOYED=true bundle exec rspec spec
 ```
+
 Feel free to issue a pull request, if this subset of specs passes.
 
 ### Development environment with Docker
